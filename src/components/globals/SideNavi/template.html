@@ -1,10 +1,18 @@
 <div id="sidenavi">
+  <h1 class="siteName">nogson</h1>
+  <nav>
     <ul>
-        <li>
-            <router-link to="/">top</router-link>
-        </li>
-        <li>
-            <router-link to="/sample1">sample1</router-link>
-        </li>
+        <router-link to="/" class="nav" tag="li" @mouseover.native="shuffleStart($event,'top')">top</router-link>
+        <router-link to="/sample1" class="nav" tag="li" @mouseover.native="shuffleStart($event,'webGL sample')">webGL sample</router-link>
+        <router-link to="/sample2" class="nav" tag="li" @mouseover.native="shuffleStart($event,'processing sample')">processing sample</router-link>
+        <router-link to="/sample4" class="nav" tag="li" @mouseover.native="shuffleStart($event,'webGL sample')">webGL sample</router-link>
+        <router-link to="/sample5" class="nav" tag="li" @mouseover.native="shuffleStart($event,'webGL sample')">webGL sample</router-link>
+        <router-link to="/sample6" class="nav" tag="li" @mouseover.native="shuffleStart($event,'webGL sample')">webGL sample</router-link>
+        <router-link to="/sample3" class="nav" tag="li" @mouseover.native="shuffleStart($event,'processing sample')">processing sample</router-link>
+
+        <li class="nav"><a href="http://nogson2.hatenablog.com/" @mouseover="shuffleStart($event,'blog')">blog</a></li>
+
     </ul>
+  </nav>
+
 </div>
